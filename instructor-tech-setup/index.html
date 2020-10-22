@@ -98,12 +98,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../helping-and-teaching/">Helper's guide (tutorial)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../breakout-rooms-helping/">How helpers manage breakout rooms (tutorial)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Instructors</span></p>
+<p class="caption"><span class="caption-text">Instructors and staff</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../instructor-intro/">Instructor introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hackmd-helper/">HackMD helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../expert-helpers/">Expert helpers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../host/">Host in workshops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../presenting/">Lesson presentation hints (checklist)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Instructor technical setup</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#technical">Technical</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#screencasting">Screencasting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminal-usage">Terminal usage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#screen-sharing">Screen sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminal-history-window">Terminal history window</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#terminal-history-for-learners">Terminal history for learners</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-tech-together/">Summary of the book &quot;Teaching Teach Together&quot; (reference)</a></li>
@@ -200,24 +208,57 @@
             
   <div class="section" id="instructor-technical-setup">
 <h1>Instructor technical setup<a class="headerlink" href="#instructor-technical-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="technical">
-<h2>Technical<a class="headerlink" href="#technical" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="terminal-usage">
+<h2>Terminal usage<a class="headerlink" href="#terminal-usage" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Move your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> and <code class="docutils literal notranslate"><span class="pre">.gitconfig</span></code> files to somewhere else before
 you begin.  You want your environment to match the student’s as
-closely as possible. Consider setting <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1=&quot;\w</span> <span class="pre">$</span> <span class="pre">&quot;</span></code> in terminal.</p></li>
+closely as possible. Consider setting <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1=&quot;\w</span> <span class="pre">$</span> <span class="pre">&quot;</span></code> in
+terminal (see below for more).</p></li>
 <li><p>Create a nice, large shell window with good contrast on the screen.
 Beware of colorized text, such as the red in “git diff”.</p></li>
-<li><p>Make sure the text is more than large enough - people are not just
-reading, but struggling to find the important parts.</p></li>
+<li><p>Don’t clear terminal often (or ever)</p></li>
 </ul>
 </div>
-<div class="section" id="screencasting">
-<h2>Screencasting<a class="headerlink" href="#screencasting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="screen-sharing">
+<h2>Screen sharing<a class="headerlink" href="#screen-sharing" title="Permalink to this headline">¶</a></h2>
+<p>You have to assume the smallest screen from learners and plan for that.</p>
+<ul class="simple">
+<li><p>Learners have a small screen, and need room for their own terminals
+and web browser open, too.  A big screen or multiple monitors is
+special.</p></li>
+<li><p>Make sure the text is more than large enough - people are not just
+reading, but struggling to find the important parts while the.</p></li>
+<li><p>Sharing a 1920x1080 screen is not a good idea: you need to make all
+the text size large so that learners can scale it down, but pixels
+are wasted.</p></li>
+<li><p>Sharing a single window would be good, but usually you need more
+than one.</p></li>
+<li><p>Zoom now has a “share portion of screen” (Screen sharing → Advanced
+→ Share a portion of the screen).</p></li>
+<li><p>Our latest idea is:</p>
+<ul>
+<li><p>Share a vertical part of the screen, for example half of your
+screen.</p></li>
+<li><p>If you have a FullHD 1920x1080 screen, maybe even a smaller
+portion than that.</p></li>
+</ul>
+</li>
+</ul>
+<p>When streaming/recording: <strong>Never stop sharing a screen, ask someone
+else to take it over</strong>.
+There is a chance that the view goes to “gallery view” in the
+recording or stream, which makes video editing harder or disrupts
+learner privacy.</p>
+</div>
+<div class="section" id="terminal-history-window">
+<h2>Terminal history window<a class="headerlink" href="#terminal-history-window" title="Permalink to this headline">¶</a></h2>
 <p>Set an easily-viewable prompt.  Colors may be good, or if not have a
 newline (don’t little minimal color and no spacing between commands,
 it is hard to parse what’s a command and what’s an output.)  The
 minimum is <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1='\n\w</span> <span class="pre">\$</span> <span class="pre">'</span></code>.  With color is <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1='\n\[\e[0;36m\]\w</span> <span class="pre">\$\[\e[0m\]</span> <span class="pre">'</span></code>.</p>
+<div class="section" id="terminal-history-for-learners">
+<h3>Terminal history for learners<a class="headerlink" href="#terminal-history-for-learners" title="Permalink to this headline">¶</a></h3>
 <p>If you are doing live shell work, you will have commands and output
 all interleaved, which makes it hard to follow what you actually
 typed.  Have a separate window that shows recent commands only,
@@ -284,6 +325,7 @@ tail -f -n 0 ~/fish_history | sed -u -e s&#39;/- cmd:/ \&gt;/&#39;
 clear &gt;$(tty)
 tail -n 0 -f ~/.zsh_history | awk -F\; &#39;NF!=1{printf(&quot;\n%s&quot;,$NF)}NF==1{printf(&quot;n %s &quot;,$1)}&#39;
 </pre></div>
+</div>
 </div>
 </div>
 </div>
