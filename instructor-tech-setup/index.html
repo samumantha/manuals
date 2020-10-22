@@ -297,6 +297,21 @@ trap &#39;bash_log_commands&#39; DEBUG
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">function</span> <span class="n">cmd_log</span> <span class="o">--</span><span class="n">on</span><span class="o">-</span><span class="n">event</span> <span class="n">fish_preexec</span> <span class="p">;</span> <span class="n">echo</span> <span class="s2">&quot;$argv&quot;</span> <span class="o">&gt;&gt;</span> <span class="o">~/</span><span class="n">demos</span><span class="o">.</span><span class="n">out</span>  <span class="p">;</span> <span class="n">end</span>
 </pre></div>
 </div>
+<p><strong>Better (tmuxp)</strong>: This will save some typing. <a class="reference external" href="https://tmuxp.git-pull.com/">TmuxP</a> is a Python program (<code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">tmuxp</span></code>) that gives you programmable <code class="docutils literal notranslate"><span class="pre">tmux</span></code> sessions. One configuration that works (in this case for <code class="docutils literal notranslate"><span class="pre">fish</span></code> shell):</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">session_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">demo</span>
+<span class="nt">windows</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">window_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">demo</span>
+    <span class="nt">layout</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">main-horizontal</span>
+    <span class="nt">options</span><span class="p">:</span>
+      <span class="nt">main-pane-height</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">7</span>
+    <span class="nt">panes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="nt">shell_command</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">touch /tmp/demo.history</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">tail -f /tmp/demo.history</span>
+      <span class="p p-Indicator">-</span> <span class="nt">shell_command</span><span class="p">:</span>
+          <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">function cmd_log --on-event fish_preexec ; echo &quot;$argv&quot; &gt;&gt; /tmp/demo.history  ; end</span>
+</pre></div>
+</div>
 <p><strong>Obselete</strong>: The below commands rely on recording your entire session
 using <code class="docutils literal notranslate"><span class="pre">script</span></code>, and then dynamically following the output.  This
 allows you to track commands even in subshells/over ssh, but introduce
