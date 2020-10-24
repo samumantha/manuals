@@ -925,7 +925,7 @@ Nothing wrong with this.</p></li>
 </div>
 </div>
 <div class="section" id="expert-helpers">
-<h3>Expert helpers<a class="headerlink" href="#expert-helpers" title="Permalink to this headline">¶</a></h3>
+<span id="experts-breakout-rooms"></span><h3>Expert helpers<a class="headerlink" href="#expert-helpers" title="Permalink to this headline">¶</a></h3>
 <p>There’s not much difference between a helper and expert helper, but we
 envision this role standing by and jumping into rooms when there’s a
 difficult problem.</p>
@@ -1030,21 +1030,35 @@ breakout rooms and the role of expert helpers</p></li>
 <h2>HackMD helpers<a class="headerlink" href="#hackmd-helpers" title="Permalink to this headline">¶</a></h2>
 <p>We have one person who is a “HackMD helper”.  This isn’t the only
 person that should edit and answer, but one person shouldn’t have too
-much else on their mind.</p>
+much else on their mind so can focus on it.  They also make sure that
+HackMD is updated with exercise, break, and other meta-information to
+keep people on track.</p>
+<p>Below, (*) = important.</p>
 <div class="section" id="general-hackmd-practices">
 <h3>General HackMD practices<a class="headerlink" href="#general-hackmd-practices" title="Permalink to this headline">¶</a></h3>
 <p>Keep it formatted well:</p>
 <ul class="simple">
-<li><p>Tag names you see with <code class="docutils literal notranslate"><span class="pre">[name=XXX]</span></code> so that we can remove it later.</p></li>
+<li><p>(*) Tag names you see with <code class="docutils literal notranslate"><span class="pre">[name=XXX]</span></code> so that we can remove it later.</p></li>
 <li><p>Add a new <code class="docutils literal notranslate"><span class="pre">##</span></code> heading when a new <em>lesson</em> or similar thing is
 started (introduction, icebreaker, break between lessons, etc)</p></li>
 <li><p>Add a new <code class="docutils literal notranslate"><span class="pre">###</span></code> heading when a new <em>episode</em>, <em>exercise</em>, <em>break</em>
 (within exercise session)</p></li>
 <li><p>Ensure people are asking questions at the bottom, direct them there
-if they aren’t</p></li>
+if they aren’t.</p></li>
+<li><p>(*) Ensure each question is a bullet point.  Each answer or follow-up
+should be a bullet point below.</p>
+<ul>
+<li><p>Should you use more deeply nested bullet points, or have only one
+level below the initial question?  It depends on the context, but
+if a conversation goes on too long, try not to let it go too
+deep.</p></li>
+</ul>
+</li>
 </ul>
 <p>Update with meta-talk, so that learners can follow along easily:</p>
 <ul class="simple">
+<li><p>Add Icebreaker and introductory material of the day.  Try to talk to
+people as they joined to get them to open HackMD and answer.</p></li>
 <li><p>Anything important for following along should not be only said via
 voice.  It needs to be in the HackMD, too.</p></li>
 <li><p>New lessons or episodes, with links to them.</p></li>
@@ -1052,29 +1066,60 @@ voice.  It needs to be in the HackMD, too.</p></li>
 goals.  If these are unclear, bring it up to the instructor by voice.</p></li>
 <li><p>Add a status display about breaks.</p></li>
 </ul>
-<p>Share it when necessary</p>
+<p>Screenshare it when necessary:</p>
 <ul class="simple">
 <li><p>During breaks and other times, share the HackMD (including the
 notification about break, and when it ends).</p></li>
+<li><p>It is nice if the arrangement allows some of the latest questions to
+be seen, so people are reminded to ask there.</p></li>
+<li><p>Someone else may do this, but should make sure it happens.</p></li>
 </ul>
 <p>Answer questions</p>
 <ul class="simple">
 <li><p>If there is an question that should be answered by the instructor by
-voice, bring it up immediately.</p></li>
-<li><p>During breakout sessions, watch for breakout rooms that need help
+voice, bring it up (by voice) to the instructor immediately.</p></li>
+<li><p>During breakout sessions, watch for HackMD notifications about
+breakout rooms that need help
 and direct someone to that room.</p></li>
-<li><p>Two points of view on when to answer:</p>
+<li><p>How soon do you answer questions? Two points of view:</p>
 <ul>
-<li><p>Answer questions right away</p></li>
-<li><p>Wait some so that we don’t overload learners</p></li>
-<li><p>You need to find your own balance.</p></li>
+<li><p>Answer questions right away: can be really intense to follow.</p></li>
+<li><p>Wait some so that we don’t overload learners: reduces the info
+flow.  But then do people need to check back more often.</p></li>
+<li><p>You need to find your own balance.  Maybe a quick answer right
+away, and more detailed later.  Or delay answers during the most
+important parts of the lecture.</p></li>
 </ul>
 </li>
 <li><p>Be careful that you don’t give too long and involved answers, which
 take up too much mental energy from learners while they are
-learning.  It’s a balance you should think about on your own.</p></li>
+learning.  It’s a balance you should think about on your own.</p>
+<ul>
+<li><p>Here, it is useful to have multiple short followups in bullet
+points, each going a bit more in detail.</p></li>
 </ul>
-<p>General format:</p>
+</li>
+</ul>
+<p>Ensure it can be posted quickly:</p>
+<ul class="simple">
+<li><p>HackMD gets posted to the workshop webpage.  For this, it needs some
+minimal amount of formatting (it doesn’t need to be perfect, just
+not horrible).</p></li>
+<li><p>All names and private information needs to be stripped.  This is why
+you should rigorously tag all names with <code class="docutils literal notranslate"><span class="pre">[name=XXX]</span></code> so they can be
+removed (see above).</p>
+<ul>
+<li><p>Learner names can be completely removed.  CR staff names can be
+<code class="docutils literal notranslate"><span class="pre">[name=CR]</span></code> or something similar.</p></li>
+<li><p>There may be other private URLs at the top or bottom.</p></li>
+</ul>
+</li>
+<li><p>If possible, send the PR adding the HackMD to the workshop webpage
+(though others can do this, too).</p></li>
+</ul>
+</div>
+<div class="section" id="hackmd-format-example">
+<h3>HackMD format example<a class="headerlink" href="#hackmd-format-example" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Workshop, day 1</span>
 
 
@@ -1084,10 +1129,20 @@ learning.  It’s a balance you should think about on your own.</p></li>
 <span class="c1">### Episode name</span>
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">coderefinery</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="mi">01</span><span class="o">-</span><span class="n">episode</span><span class="o">/</span>
 
+<span class="o">-</span> <span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">question</span>
+  <span class="o">-</span> <span class="n">Anwser</span>
+  <span class="o">-</span> <span class="n">More</span> <span class="n">detailed</span> <span class="n">answer</span>
+<span class="o">-</span> <span class="n">question</span>
+  <span class="o">-</span> <span class="n">answer</span>
+
 <span class="c1">### Exercises:</span>
 <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">link</span><span class="o">-</span><span class="n">to</span><span class="o">-</span><span class="n">exercise</span><span class="o">/.../.../</span><span class="c1">#section</span>
 <span class="mi">20</span> <span class="n">minutes</span><span class="p">,</span> <span class="n">until</span> <span class="n">xx</span><span class="p">:</span><span class="mi">45</span>
 <span class="n">Try</span> <span class="n">to</span> <span class="n">accomplish</span> <span class="nb">all</span> <span class="n">of</span> <span class="n">points</span> <span class="mi">1</span><span class="o">-</span><span class="mf">3.</span>  <span class="n">Parts</span> <span class="mi">4</span><span class="o">-</span><span class="mi">5</span> <span class="n">are</span> <span class="n">optional</span><span class="o">.</span>
+
+<span class="n">Breakout</span> <span class="n">room</span> <span class="n">status</span><span class="p">:</span>
+<span class="o">-</span> <span class="n">room</span> <span class="mi">2</span><span class="p">,</span> <span class="n">need</span> <span class="n">help</span> <span class="k">with</span> <span class="n">Linux</span> <span class="n">permissions</span>
+<span class="o">-</span> <span class="n">room</span> <span class="mi">5</span><span class="p">,</span> <span class="n">done</span>
 
 <span class="c1">### Break</span>
 <span class="p">:::</span><span class="n">danger</span>
@@ -1112,38 +1167,107 @@ learning.  It’s a balance you should think about on your own.</p></li>
 <li><p>As an expert helper, your main job is to move between different
 groups and make sure that groups are doing well.</p></li>
 <li><p>You might be summoned to a group whose helper needs extra help, or
-take the place of a helper if a group doesn’t have one.</p></li>
+take the place of a helper if a group doesn’t have one.</p>
+<ul>
+<li><p>Watch HackMD/Zulip for this, though requests might come in from
+other channels, too.</p></li>
+</ul>
+</li>
 <li><p>No one is expected to know everything, but an expert helper should be
 able to find a person who can answer, or confident enough to say
 they should move on.</p></li>
 <li><p>Make sure you have a new (newer than 15 october 2020) Zoom client,
 so that you can join arbitrary breakout rooms.</p>
 <ul>
-<li><p>TODO: You should be able to join arbitrary breakout rooms.</p></li>
+<li><p>If you don’t, then you have to ask to be put into some room, and
+then you can swap to any other room.</p></li>
 </ul>
 </li>
-<li><p>Report in zulipchat (or hackmd) how breakout rooms are doing, and
-the general pulse of the workshop.</p></li>
-<li><p><a class="reference internal" href="index.html#document-breakout-rooms-helping"><span class="doc">Hints on breakout rooms, teams, and helping</span></a>: important reference.</p></li>
+<li><p>Report an overview of the pulse of the breakout rooms in zulipchat
+(or hackmd).  Is everyone behind?  People finishing early?  Big
+differences between them?  Questions which we should bring up in the
+main room?</p></li>
+<li><p>Monitor if any helpers need extra help or training.  Should we
+improve our helper training?</p></li>
+</ul>
+<p>Other reference:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="index.html#document-breakout-rooms-helping"><span class="doc">Hints on breakout rooms, teams, and helping</span></a>: important reference, in particular
+the <a class="reference internal" href="index.html#experts-breakout-rooms"><span class="std std-ref">Expert helpers</span></a> section.</p></li>
 <li><p><a class="reference internal" href="index.html#document-hackmd-helper"><span class="doc">HackMD helpers</span></a>: You may spend a lot of time watching hackmd.</p></li>
 </ul>
 </div>
 <span id="document-host"></span><div class="section" id="host-in-workshops">
 <h2>Host in workshops<a class="headerlink" href="#host-in-workshops" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
+<li><p>Make all of other staff and expert helpers co-hosts.</p></li>
 <li><p>Take attendance in spreadsheet, if we do that.</p>
 <ul>
 <li><p>TODO: provide sample spreadsheet</p></li>
+<li><p>It might be easiest to take attendance all at once, in the middle
+of the session, after everyone has been assigned to breakout
+rooms.</p></li>
 </ul>
 </li>
 </ul>
 <div class="section" id="breakout-rooms">
 <h3>Breakout rooms<a class="headerlink" href="#breakout-rooms" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>Rename people to include breakout room number (others should help
-too), though.  (this is a continuous process)</p></li>
+<li><p>Rename people to include breakout room number (other co-hosts should
+help and hopefully do most of this work too), though.  (this is a
+continuous process as people drop out and rejoin)</p></li>
 <li><p>Assign people to breakout rooms (this is a continuous process)</p></li>
-<li><p>Merge breakout rooms as necessary.</p></li>
+<li><p>Merge breakout rooms as necessary, to try to keep them balanced well</p></li>
+<li><p>Constantly watch for new people joining, rename them, and assign
+them to breakout rooms.</p>
+<ul>
+<li><p>Note, you might have merged the room they were originally in, so
+they might end up in an empty room!</p></li>
+</ul>
+</li>
+<li><p>Plan for the future: how many helpers might be missing, which rooms
+need to be merged.  Can you keep the merging somewhat consistent
+over time?</p></li>
+</ul>
+</div>
+<div class="section" id="recording">
+<h3>Recording<a class="headerlink" href="#recording" title="Permalink to this headline">¶</a></h3>
+<p>Recording workshops provides a way for learners to get an instant
+review of what was covered, increasing learning.  We don’t currently
+intend for workshop recordings to be useful to new people learning
+later, but they could be.</p>
+<ul class="simple">
+<li><p>Record the workshop or give permission for others to record.</p>
+<ul>
+<li><p>If you are recording, you can’t leave and go to other rooms.</p></li>
+<li><p>Perhaps a separate computer could record?</p></li>
+</ul>
+</li>
+<li><p>spotlight speaker</p></li>
+<li><p>dual monitor mode?</p></li>
+<li><p>ensure that screen is always being shared?</p></li>
+<li><p>stay in speaker view (not gallery view)</p></li>
+<li><p>start and stop recording</p></li>
+<li><p>rename recording immediately <code class="docutils literal notranslate"><span class="pre">dayN-lessonname-zoom.mp4</span></code> and upload
+to google drive.</p></li>
+</ul>
+</div>
+<div class="section" id="streaming">
+<h3>Streaming<a class="headerlink" href="#streaming" title="Permalink to this headline">¶</a></h3>
+<p>All of the steps needed to record mean that you can stream, too.  In
+fact, you could look at streaming as a side-effect of recording (or a
+way to record).</p>
+<ul class="simple">
+<li><p>spotlight speaker</p></li>
+<li><p>start streaming</p></li>
+<li><p>dual monitor mode?</p></li>
+<li><p>ensure that screen is always being shared?</p></li>
+<li><p>stay in speaker view (not gallery view)</p></li>
+<li><p>have stream feed open.  If you see it change to gallery view, fix it
+immediately.</p></li>
+<li><p>stop streaming</p></li>
+<li><p>download recording from twitch, rename to
+<code class="docutils literal notranslate"><span class="pre">dayN-lessonname-twitch.mp4</span></code> and upload to google drive.</p></li>
 </ul>
 </div>
 </div>
