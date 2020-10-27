@@ -1577,6 +1577,13 @@ trap &#39;bash_log_commands&#39; DEBUG
           <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">function cmd_log --on-event fish_preexec ; echo &quot;$argv&quot; &gt;&gt; /tmp/demo.history  ; end</span>
 </pre></div>
 </div>
+<p><strong>Windows PowerShell</strong>: In <a class="reference external" href="https://docs.microsoft.com/en-us/windows/terminal/">Windows Terminal</a>,
+a split can be made by pressing <code class="docutils literal notranslate"><span class="pre">CTRL+SHIFT+=</span></code>. Then, in one of the splits, the following
+PowerShell command will start tracking the shell history:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Get</span><span class="o">-</span><span class="n">Content</span> <span class="p">(</span><span class="n">Get</span><span class="o">-</span><span class="n">PSReadlineOption</span><span class="p">)</span><span class="o">.</span><span class="n">HistorySavePath</span> <span class="o">-</span><span class="n">Wait</span>
+</pre></div>
+</div>
+<p>Unfortunately, this only shows commands after they have been executed.</p>
 <p><strong>Obselete</strong>: The below commands rely on recording your entire session
 using <code class="docutils literal notranslate"><span class="pre">script</span></code>, and then dynamically following the output.  This
 allows you to track commands even in subshells/over ssh, but introduce
