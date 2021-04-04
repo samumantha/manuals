@@ -4,7 +4,8 @@
 <html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
-  
+  <meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Instructor technical setup &mdash; CodeRefinery manuals  documentation</title>
@@ -44,7 +45,7 @@
     
     <link rel="index" title="Index" href="../genindex/" />
     <link rel="search" title="Search" href="../search/" />
-    <link rel="next" title="Summary of Teaching Tech Together" href="../teaching-tech-together/" />
+    <link rel="next" title="Team teaching" href="../team-teaching/" />
     <link rel="prev" title="Lesson presentation hints" href="../presenting/" /> 
 </head>
 
@@ -90,20 +91,20 @@
               
             
             
-              <p class="caption"><span class="caption-text">Learners</span></p>
+              <p><span class="caption-text">Learners</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../how-to-attend-online/">Attending an online workshop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../how-to-attend-inperson/">Attending an in-person workshop</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../zoom-mechanics/">Zoom mechanics and signals (tutorial for learners)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hackmd-mechanics/">Hackmd mechanics (tutorial for learners)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Helpers</span></p>
+<p><span class="caption-text">Helpers</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../helper-intro/">Helper's intro (tutorial)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../helping-and-teaching/">Helper's guide (tutorial)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../breakout-rooms-helping/">How helpers manage breakout rooms (tutorial)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Instructors and staff</span></p>
+<p><span class="caption-text">Instructors and staff</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../instructor-intro/">Instructor introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../hackmd-helper/">HackMD helpers</a></li>
@@ -125,13 +126,14 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../team-teaching/">Team teaching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../teaching-tech-together/">Summary of the book &quot;Teaching Teach Together&quot; (reference)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Online teaching</span></p>
+<p><span class="caption-text">Online teaching</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../online/">Online teaching</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Workshop organizers</span></p>
+<p><span class="caption-text">Workshop organizers</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../workshop-requirements-inperson/">Workshop basic requirements (in person) (checklist)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../workshop-administration/">Workshop administration (reference)</a></li>
@@ -140,16 +142,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../icebreakers/">Icebreaker question ideas (reference)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../video-editing/">Workshp video editing (tutorial)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Lesson designers</span></p>
+<p><span class="caption-text">Lesson designers</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../lesson-design/">Lesson design tutorial and reference</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../lesson-review/">Lesson review checklist</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Misc</span></p>
+<p><span class="caption-text">Misc</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../tech-docs/">Writing technical docs (reference)</a></li>
 </ul>
-<p class="caption"><span class="caption-text">About CodeRefinery</span></p>
+<p><span class="caption-text">About CodeRefinery</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../chat/">Chat</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing/">Contributing</a></li>
@@ -223,9 +225,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="instructor-technical-setup">
+  <section id="instructor-technical-setup">
 <h1>Instructor technical setup<a class="headerlink" href="#instructor-technical-setup" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="terminal-usage">
+<section id="terminal-usage">
 <h2>Terminal usage<a class="headerlink" href="#terminal-usage" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Move your <code class="docutils literal notranslate"><span class="pre">.bashrc</span></code> and <code class="docutils literal notranslate"><span class="pre">.gitconfig</span></code> files to somewhere else before
@@ -236,8 +238,8 @@ terminal (see below for more).</p></li>
 Beware of colorized text, such as the red in “git diff”.</p></li>
 <li><p>Don’t clear terminal often (or ever)</p></li>
 </ul>
-</div>
-<div class="section" id="screen-sharing">
+</section>
+<section id="screen-sharing">
 <h2>Screen sharing<a class="headerlink" href="#screen-sharing" title="Permalink to this headline">¶</a></h2>
 <p>You have to assume the smallest screen from learners and plan for that.</p>
 <ul class="simple">
@@ -267,68 +269,84 @@ else to take it over</strong>.
 There is a chance that the view goes to “gallery view” in the
 recording or stream, which makes video editing harder or disrupts
 learner privacy.</p>
-<div class="section" id="screen-share-examples">
+<section id="screen-share-examples">
 <h3>Screen share examples<a class="headerlink" href="#screen-share-examples" title="Permalink to this headline">¶</a></h3>
 <p>These are layouts of the actual screen or portion of screen being
 shared:</p>
-<div class="figure align-default" id="id1">
+<figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/screenshare-fullhd.png"><img alt="../_images/screenshare-fullhd.png" src="../_images/screenshare-fullhd.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><strong>S1</strong>: A FullHD 1920x1080 screen shared.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id2">
+<figcaption>
+<p><span class="caption-text"><strong>S1</strong>: A FullHD 1920x1080 screen shared.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../_images/screenshare-vertical.png"><img alt="../_images/screenshare-vertical.png" src="../_images/screenshare-vertical.png" style="width: 50%;" /></a>
-<p class="caption"><span class="caption-text"><strong>S2</strong>: A vertical screen layout shared.  Note the extra shell history at the
+<figcaption>
+<p><span class="caption-text"><strong>S2</strong>: A vertical screen layout shared.  Note the extra shell history at the
 top.  The web browser is at the bottom, because the Zoom toolbar can
 cover the bottom bit.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id3">
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
 <a class="reference internal image-reference" href="../_images/screenshare-jupyter.png"><img alt="../_images/screenshare-jupyter.png" src="../_images/screenshare-jupyter.png" style="width: 50%;" /></a>
-<p class="caption"><span class="caption-text"><strong>S3</strong>: A sort-of GUI (Jupyter) shared vertically.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id4">
+<figcaption>
+<p><span class="caption-text"><strong>S3</strong>: A sort-of GUI (Jupyter) shared vertically.</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id4">
 <a class="reference internal image-reference" href="../_images/screenshare-rsh.png"><img alt="../_images/screenshare-rsh.png" src="../_images/screenshare-rsh.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><strong>S4</strong>: This isn’t a screenshare from CodeRefinery, but may be instructive.
+<figcaption>
+<p><span class="caption-text"><strong>S4</strong>: This isn’t a screenshare from CodeRefinery, but may be instructive.
 Note the horizontal layout and shell history at the bottom right.</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="screen-layout-learners">
+</figcaption>
+</figure>
+</section>
+<section id="screen-layout-learners">
 <h3>Screen layout: learners<a class="headerlink" href="#screen-layout-learners" title="Permalink to this headline">¶</a></h3>
 <p>This is how learners can arrange their screen:</p>
-<div class="figure align-default" id="id5">
+<figure class="align-default" id="id5">
 <a class="reference internal image-reference" href="../_images/learner-largescreen.png"><img alt="../_images/learner-largescreen.png" src="../_images/learner-largescreen.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><strong>L1</strong>: Learner with a large screen, Zoom in dual-monitor mode so that the
+<figcaption>
+<p><span class="caption-text"><strong>L1</strong>: Learner with a large screen, Zoom in dual-monitor mode so that the
 instructur pictures are not shown.  Screenshare is on the left side,
 HackMD at bottom left, terminal and web browser on the right.</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id6">
+</figcaption>
+</figure>
+<figure class="align-default" id="id6">
 <a class="reference internal image-reference" href="../_images/learner-normal.png"><img alt="../_images/learner-normal.png" src="../_images/learner-normal.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><strong>L2</strong>: A learner with a single large screen (Zoom in “single monitor mode”).
+<figcaption>
+<p><span class="caption-text"><strong>L2</strong>: A learner with a single large screen (Zoom in “single monitor mode”).
 Instructor screen share at right, learner stuff at left.</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
-</div>
-<div class="figure align-default" id="id7">
+</figcaption>
+</figure>
+<figure class="align-default" id="id7">
 <a class="reference internal image-reference" href="../_images/learner-small.png"><img alt="../_images/learner-small.png" src="../_images/learner-small.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><strong>L3</strong>: A learner with a particularly small screen.  Instructur screenshare at
+<figcaption>
+<p><span class="caption-text"><strong>L3</strong>: A learner with a particularly small screen.  Instructur screenshare at
 left, your windows at right.</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-</div>
-<div class="section" id="screen-layout-instructors">
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="screen-layout-instructors">
 <h2>Screen layout: instructors<a class="headerlink" href="#screen-layout-instructors" title="Permalink to this headline">¶</a></h2>
 <p>This is what the instructor sees on their screen:</p>
-<div class="figure align-default" id="id8">
+<figure class="align-default" id="id8">
 <a class="reference internal image-reference" href="../_images/instructor.png"><img alt="../_images/instructor.png" src="../_images/instructor.png" style="width: 75%;" /></a>
-<p class="caption"><span class="caption-text"><strong>I1</strong>: Vertical instructor setup.  Zoom is sharing a portion of the left
+<figcaption>
+<p><span class="caption-text"><strong>I1</strong>: Vertical instructor setup.  Zoom is sharing a portion of the left
 side, the right side is free for following HackMD, chat, etc (but
 don’t overload yourself).</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
-</div>
-</div>
-<div class="section" id="terminal-history-window">
+</figcaption>
+</figure>
+</section>
+<section id="terminal-history-window">
 <h2>Terminal history window<a class="headerlink" href="#terminal-history-window" title="Permalink to this headline">¶</a></h2>
 <p>Set an easily-viewable prompt.  Colors may be good, or if not have a
 newline (don’t little minimal color and no spacing between commands,
 it is hard to parse what’s a command and what’s an output.)  The
 minimum is <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1='\n\w</span> <span class="pre">\$</span> <span class="pre">'</span></code>.  With color is <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PS1='\n\[\e[0;36m\]\w</span> <span class="pre">\$\[\e[0m\]</span> <span class="pre">'</span></code>.</p>
-<div class="section" id="terminal-history-for-learners">
+<section id="terminal-history-for-learners">
 <h3>Terminal history for learners<a class="headerlink" href="#terminal-history-for-learners" title="Permalink to this headline">¶</a></h3>
 <p>If you are doing live shell work, you will have commands and output
 all interleaved, which makes it hard to follow what you actually
@@ -419,9 +437,9 @@ clear &gt;$(tty)
 tail -n 0 -f ~/.zsh_history | awk -F\; &#39;NF!=1{printf(&quot;\n%s&quot;,$NF)}NF==1{printf(&quot;n %s &quot;,$1)}&#39;
 </pre></div>
 </div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
            </div>
@@ -429,7 +447,7 @@ tail -n 0 -f ~/.zsh_history | awk -F\; &#39;NF!=1{printf(&quot;\n%s&quot;,$NF)}N
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../teaching-tech-together/" class="btn btn-neutral float-right" title="Summary of Teaching Tech Together" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../team-teaching/" class="btn btn-neutral float-right" title="Team teaching" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
         <a href="../presenting/" class="btn btn-neutral float-left" title="Lesson presentation hints" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
