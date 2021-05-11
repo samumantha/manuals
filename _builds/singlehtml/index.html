@@ -118,7 +118,8 @@
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-online-training">Online training manual (tutorial, reference)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-indico-workshop-management">Guide on how to use Indico (reference)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="index.html#document-icebreakers">Icebreaker question ideas (reference)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="index.html#document-video-editing">Workshp video editing (tutorial)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-video-checking">Video checking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-video-editing">Video editing</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Lesson designers</span></p>
 <ul>
@@ -3693,8 +3694,104 @@ just told you about computing when you first started it?</p></li>
 in the first Mega-CodeRefinery workshop.</p>
 </div>
 </div>
+<span id="document-video-checking"></span><div class="section" id="video-checking">
+<h2>Video checking<a class="headerlink" href="#video-checking" title="Permalink to this headline">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="index.html#document-video-editing"><span class="doc">Video editing</span></a> tells how to edit yourself.  This page
+describes how to check a video for processing.</p>
+</div>
+<p>The purpose of this page is to give video processing volunteers a
+starting point.  CodeRefinery produces a lot of videos, and <em>learner
+privacy is important</em>: we can’t post videos until they are checked.
+These videos are mainly useful to the learners of the very workshop,
+so we need them quickly (and for every workshop).</p>
+<div class="section" id="overview">
+<h3>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Ask for the directory of videos.  It is on Google Drive or something
+similar, but is not public.</p></li>
+<li><p>Look at the tracking issue.  Find a unclaimed section of the course.</p></li>
+<li><p>Watch the video.</p>
+<ul>
+<li><p><em>Carefully</em> look for any appearances of learner video within the
+video.</p></li>
+</ul>
+</li>
+<li><p>Copy the template below.</p></li>
+<li><p>Fill out the template.</p></li>
+<li><p>Paste the answers into an issue.</p></li>
+</ul>
+</div>
+<div class="section" id="segment-report">
+<h3>Segment report<a class="headerlink" href="#segment-report" title="Permalink to this headline">¶</a></h3>
+<p>Template:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="p">[</span> <span class="p">]</span> <span class="n">Title</span><span class="p">:</span>
+<span class="o">*</span> <span class="n">Filename</span><span class="p">:</span>
+<span class="o">*</span> <span class="n">Start</span><span class="p">:</span>
+<span class="o">*</span> <span class="n">End</span><span class="p">:</span>
+<span class="o">*</span> <span class="n">Segments</span> <span class="n">to</span> <span class="n">cut</span><span class="p">:</span>
+<span class="o">*</span> <span class="n">Audience</span> <span class="n">visible</span><span class="p">:</span>
+<span class="n">Other</span> <span class="n">notes</span> <span class="k">for</span> <span class="n">channel</span> <span class="n">description</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span> <span class="n">Title</span><span class="p">:</span> <span class="n">git</span><span class="o">-</span><span class="n">intro</span> <span class="n">basics</span>
+<span class="o">*</span> <span class="n">Filename</span><span class="p">:</span> <span class="n">day1</span><span class="o">-</span><span class="n">obs</span>
+<span class="o">*</span> <span class="n">Start</span><span class="p">:</span> <span class="mi">25</span><span class="p">:</span><span class="mi">13</span>
+<span class="o">*</span> <span class="n">End</span><span class="p">:</span> <span class="mi">45</span><span class="p">:</span><span class="mi">00</span>
+<span class="o">*</span> <span class="n">Segments</span> <span class="n">to</span> <span class="n">cut</span><span class="p">:</span> <span class="mi">36</span><span class="p">:</span><span class="mi">12</span> <span class="o">-</span> <span class="mi">42</span><span class="p">:</span><span class="mi">10</span>
+<span class="o">*</span> <span class="n">Audience</span> <span class="n">visible</span><span class="p">:</span>  <span class="n">none</span>
+
+<span class="n">Other</span> <span class="n">notes</span> <span class="k">for</span> <span class="n">channel</span> <span class="n">description</span><span class="p">:</span>
+
+<span class="n">In</span> <span class="n">this</span> <span class="n">first</span> <span class="n">episode</span><span class="p">,</span> <span class="n">we</span> <span class="n">go</span> <span class="n">over</span> <span class="n">the</span> <span class="n">basics</span> <span class="n">of</span> <span class="n">using</span> <span class="n">git</span> <span class="k">for</span> <span class="n">a</span> <span class="n">single</span>
+<span class="n">local</span> <span class="n">directory</span><span class="o">.</span>
+<span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">coderefinery</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">io</span><span class="o">/</span><span class="n">git</span><span class="o">-</span><span class="n">intro</span><span class="o">/</span><span class="mi">02</span><span class="o">-</span><span class="n">basics</span><span class="o">/</span>
+</pre></div>
+</div>
+<p>Why do we ask all this?  It saves time for the person who has to
+upload it to YouTube.</p>
+<ul class="simple">
+<li><p><strong>Title</strong>: what would it be called?  You don’t need to include the
+workshop name, someone will add it.</p></li>
+<li><p><strong>Filename</strong>: you don’t need the full filename but indicate what
+file you were searching (often we have a recording and backup
+recording for each day)</p></li>
+<li><p><strong>Start</strong>, <strong>end</strong>: start time of the segment</p></li>
+<li><p><strong>Segments to cut</strong>: Segments which should be cut out.  Don’t be
+strict, it is better to get it out fast than cut out every 3-minute
+break.  But if there is a ~10 minute break or idle time, then we can
+cut it.</p></li>
+<li><p><strong>Audience visible</strong>: Time periods where any audience (not including
+staff).</p></li>
+<li><p><strong>Other notes for channel description</strong>: Describe the content of the
+video, include any links.  You can think what is useful for someone
+to find this (but it doesn’t have to be perfect).</p></li>
+</ul>
+</div>
+<div class="section" id="other-comments">
+<h3>Other comments<a class="headerlink" href="#other-comments" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>How small should segments be?  First, it’s better for videos to exist
+than be perfect, so the 3-hour segment is better than nothing.  Short
+lessons (1.5 hour) are probably fine to be at once, and long ones (git
+intro/collab) could possibly be each episode separately.  Discuss with
+others to see what you would like.</p></li>
+<li><p>Ideally, there are two videos from each day: one recorded by Twitch
+(raw dump of the stream), and one recorded by OBS/Zoom (local
+recording).  The OBS/Zoom recording is preferable.  You can tell
+them apart via the filenames.</p></li>
+</ul>
+</div>
+</div>
 <span id="document-video-editing"></span><div class="section" id="video-editing">
 <h2>Video editing<a class="headerlink" href="#video-editing" title="Permalink to this headline">¶</a></h2>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference internal" href="index.html#document-video-checking"><span class="doc">Video checking</span></a> for how to check a video and give an
+edit-list to someone else to do the editing.</p>
+</div>
 <p>The purpose of this page is to give video processing volunteers a
 starting point.  (It also has some hints for workshop organizers).</p>
 <p>For some of our online lessons, we release videos on YouTube.  This is
